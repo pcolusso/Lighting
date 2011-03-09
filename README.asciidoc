@@ -1,0 +1,23 @@
+[readme]
+Readme for DynLighting
+----------------------
+
+Info
+----
+
+This is a small project attempting to implement OrangyTang's
+dynamic shadow algorithm in C# w/ OpenTK. Hopefully, we should 
+be able to move towarards a shader-based.
+
+Todo
+----
+.Planned Activity
+- [[[Finish OrangyTang Implementation]]] Complete the OrangyTang implementation
+- [[[Remove Immediate Mode]]] Try to implement more efficient means of rendering, like VBOs
+- [[[Implement Shaders]]] Try to alleviate CPU load
+- [[[Implement CatlinZima Shadows]]] Port the XNA shader-based shadow generator to OGL
+
+Useful Links
+------------
+- [[[OrangyTang's GameDev Article]]] - http://archive.gamedev.net/reference/articles/article2032.asp
+- [[[Catlinzima's Shader Based 2D Dynamic Soft Shadows]]] - http://www.catalinzima.com/2010/07/my-technique-for-the-shader-based-dynamic-2d-shadows/
