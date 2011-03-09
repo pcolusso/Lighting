@@ -1,0 +1,7 @@
+C:\Users\Paul\Documents\My Dropbox\Developer\DynLights\DynLights\obj\x86\Debug\ResolveAssemblyReference.cache
+C:\Users\Paul\Documents\My Dropbox\Developer\DynLights\DynLights\bin\Debug\OpenTK.dll.config
+C:\Users\Paul\Documents\My Dropbox\Developer\DynLights\DynLights\bin\Debug\DynLights.exe
+C:\Users\Paul\Documents\My Dropbox\Developer\DynLights\DynLights\bin\Debug\DynLights.pdb
+C:\Users\Paul\Documents\My Dropbox\Developer\DynLights\DynLights\bin\Debug\OpenTK.dll
+C:\Users\Paul\Documents\My Dropbox\Developer\DynLights\DynLights\obj\x86\Debug\DynLights.exe
+C:\Users\Paul\Documents\My Dropbox\Developer\DynLights\DynLights\obj\x86\Debug\DynLights.pdb

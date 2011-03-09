@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?><?xml-stylesheet type='text/xsl' href='_UpgradeReport_Files/UpgradeReport.xslt'?><UpgradeLog>
+<Properties><Property Name="Solution" Value="DynLights">
+</Property><Property Name="Solution File" Value="C:\Users\Paul\Documents\My Dropbox\Developer\DynLights\DynLights.sln">
+</Property><Property Name="Date" Value="Tuesday, 8 March 2011">
+</Property><Property Name="Time" Value="17:45 PM">
+</Property></Properties><Event ErrorLevel="0" Project="" Source="DynLights.sln" Description="File successfully backed up as C:\Users\Paul\Documents\My Dropbox\Developer\DynLights\Backup\DynLights.sln">
+</Event><Event ErrorLevel="0" Project="DynLights" Source="DynLights\DynLights.csproj" Description="Project file successfully backed up as C:\Users\Paul\Documents\My Dropbox\Developer\DynLights\Backup\DynLights\DynLights.csproj">
+</Event><Event ErrorLevel="0" Project="DynLights" Source="DynLights\Light.cs" Description="File successfully backed up as C:\Users\Paul\Documents\My Dropbox\Developer\DynLights\Backup\DynLights\Light.cs">
+</Event><Event ErrorLevel="0" Project="DynLights" Source="DynLights\ConvexHull.cs" Description="File successfully backed up as C:\Users\Paul\Documents\My Dropbox\Developer\DynLights\Backup\DynLights\ConvexHull.cs">
+</Event><Event ErrorLevel="0" Project="DynLights" Source="DynLights\View.cs" Description="File successfully backed up as C:\Users\Paul\Documents\My Dropbox\Developer\DynLights\Backup\DynLights\View.cs">
+</Event><Event ErrorLevel="0" Project="DynLights" Source="DynLights\Main.cs" Description="File successfully backed up as C:\Users\Paul\Documents\My Dropbox\Developer\DynLights\Backup\DynLights\Main.cs">
+</Event><Event ErrorLevel="0" Project="DynLights" Source="DynLights\ShaderManager.cs" Description="File successfully backed up as C:\Users\Paul\Documents\My Dropbox\Developer\DynLights\Backup\DynLights\ShaderManager.cs">
+</Event><Event ErrorLevel="0" Project="DynLights" Source="DynLights\FramebufferManager.cs" Description="File successfully backed up as C:\Users\Paul\Documents\My Dropbox\Developer\DynLights\Backup\DynLights\FramebufferManager.cs">
+</Event><Event ErrorLevel="0" Project="DynLights" Source="DynLights\OpenTK.dll.config" Description="File successfully backed up as C:\Users\Paul\Documents\My Dropbox\Developer\DynLights\Backup\DynLights\OpenTK.dll.config">
+</Event><Event ErrorLevel="0" Project="DynLights" Source="DynLights\DynLights.csproj" Description="Project converted successfully">
+</Event><Event ErrorLevel="3" Project="DynLights" Source="DynLights\DynLights.csproj" Description="Converted">
+</Event><Event ErrorLevel="0" Project="" Source="DynLights.sln" Description="Solution converted successfully">
+</Event><Event ErrorLevel="3" Project="" Source="DynLights.sln" Description="Converted">
+</Event><Event ErrorLevel="0" Project="DynLights" Source="DynLights\DynLights.csproj" Description="Scan complete: Upgrade not required for project files.">
+</Event></UpgradeLog>
