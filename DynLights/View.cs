@@ -18,7 +18,7 @@ namespace DynLights
         public View ()
 			: base (800, 600, new GraphicsMode(32,22,0,0))
 		{
-			lights.Add(new Light(720,20,400,0.01f));
+			lights.Add(new Light(720,20,400,0.02f));
 			lights.Add(new Light(20,20,400,0.01f));
             hulls.Add(new ConvexHull(0.0f, new Vector2[] { new Vector2(12,12), new Vector2(15,67), new Vector2(53, 35), new Vector2(22,34) }, Color.Violet, new Point(12,32)));
 			hulls.Add(new ConvexHull(0.0f, new Vector2[] { new Vector2(34,22), new Vector2(55,67), new Vector2(20, 30)}, Color.Gold, new Point(500,500)));
@@ -121,7 +121,6 @@ namespace DynLights
 				GL.DepthMask(true);
 				foreach(ConvexHull h in hulls)
                     	h.Render();
-				//GL.ColorMask(false, false, false, false);
 				
                 GL.DepthMask(false);
                 GL.Disable(EnableCap.DepthTest);
@@ -133,7 +132,7 @@ namespace DynLights
                     GL.Clear(ClearBufferMask.ColorBufferBit);
 					
                     GL.Disable(EnableCap.Blend);
-                    //GL.Enable(EnableCap.DepthTest);
+                    GL.Enable(EnableCap.DepthTest);
                     GL.ColorMask(false, false, false, true);
                     l.RenderAlpha(1.0f);
 
@@ -141,7 +140,7 @@ namespace DynLights
                     GL.BlendFunc(BlendingFactorSrc.DstAlpha, BlendingFactorDest.One);
                     GL.ColorMask(true, true, true, false);
 					
-					//GL.Disable(EnableCap.DepthTest);
+					GL.Disable(EnableCap.DepthTest);
                 }
             }
 			

@@ -2,11 +2,13 @@
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug|x86" />
   <MonoDevelop.Ide.Workbench ActiveDocument="DynLights/View.cs">
     <Files>
-      <File FileName="DynLights/Light.cs" Line="9" Column="30" />
-      <File FileName="DynLights/View.cs" Line="125" Column="5" />
-      <File FileName="DynLights/FramebufferManager.cs" Line="77" Column="5" />
-      <File FileName="../dickery/Pong-#/Invaders/View.cs" Line="288" Column="41" />
+      <File FileName="DynLights/Light.cs" Line="33" Column="36" />
+      <File FileName="DynLights/View.cs" Line="92" Column="4" />
+      <File FileName="../../../Downloads/Dynamic 2D Soft Shadows/main.py" Line="117" Column="1" />
       <File FileName="../dickery/Pong-#/Utils/VBOTools.cs" Line="1" Column="1" />
+      <File FileName="../../../Downloads/Dynamic 2D Soft Shadows/light.py" Line="86" Column="29" />
+      <File FileName="DynLights/FramebufferManager.cs" Line="121" Column="4" />
+      <File FileName="DynLights/ConvexHull.cs" Line="19" Column="28" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
