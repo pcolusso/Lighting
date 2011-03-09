@@ -14,10 +14,18 @@ Global
 		{4E80E3F5-65D9-410E-985F-D32CD7EC6A9E}.Release|x86.ActiveCfg = Release|x86
 		{4E80E3F5-65D9-410E-985F-D32CD7EC6A9E}.Release|x86.Build.0 = Release|x86
 	EndGlobalSection
-	GlobalSection(SolutionProperties) = preSolution
-		HideSolutionNode = FALSE
-	EndGlobalSection
 	GlobalSection(MonoDevelopProperties) = preSolution
 		StartupItem = DynLights\DynLights.csproj
+		Policies = $0
+		$0.VersionControlPolicy = $1
+		$1.inheritsSet = Mono
+		$0.ChangeLogPolicy = $2
+		$2.UpdateMode = None
+		$2.MessageStyle = $3
+		$3.LineAlign = 0
+		$2.inheritsSet = Mono
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
 	EndGlobalSection
 EndGlobal

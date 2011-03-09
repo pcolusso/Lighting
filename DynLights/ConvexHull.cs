@@ -16,12 +16,12 @@ namespace DynLights
 		public ConvexHull(float depth, Vector2[] points, Color color, Point pos)
 		{
 			this.depth = depth;
-            colour = Color.Purple;
+            colour = color;
 			this.pos = pos;
 			Points.AddRange(points);
 		}
 		
-		public void DrawShadowGeometry(Light l)
+		public void RenderShadowGeometry(Light l)
 		{
 			
 		}
@@ -30,8 +30,8 @@ namespace DynLights
         {
             GL.Color4(colour);
             GL.PushMatrix();
-            GL.Begin(BeginMode.Polygon);
-            //GL.Translate(pos.X, pos.Y, depth);
+            GL.Begin(BeginMode.Triangles);
+            GL.Translate(pos.X, pos.Y, depth);
             foreach (Vector2 vertex in Points)
                 GL.Vertex2(vertex);
             GL.End();

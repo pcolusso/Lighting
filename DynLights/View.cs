@@ -18,7 +18,10 @@ namespace DynLights
         public View ()
 			: base (800, 600, new GraphicsMode(32,22,0,0))
 		{
+			lights.Add(new Light(720,20,400,0.01f));
+			lights.Add(new Light(20,20,400,0.01f));
             hulls.Add(new ConvexHull(0.0f, new Vector2[] { new Vector2(12,12), new Vector2(15,67), new Vector2(53, 35), new Vector2(22,34) }, Color.Violet, new Point(12,32)));
+			hulls.Add(new ConvexHull(0.0f, new Vector2[] { new Vector2(34,22), new Vector2(55,67), new Vector2(20, 30)}, Color.Gold, new Point(500,500)));
 		}
 		
 		protected override void OnLoad (EventArgs e)
@@ -93,68 +96,59 @@ namespace DynLights
 		protected override void OnUpdateFrame (FrameEventArgs e)
 		{
 			base.OnUpdateFrame (e);
-            if (Keyboard[Key.Escape])
-                Exit(); 
+           	//lights[0].Position = new Point(Mouse.X, Mouse.Y);
+			//if (Keyboard[Key.U])
+				//lights.Add(new Light(Mouse.X, Mouse.Y, 100, 0));
+			if (Keyboard[Key.Escape])
+                Exit();
 		}
 		
 		protected override void OnRenderFrame (FrameEventArgs e)
         {
             base.OnRenderFrame(e);
-            GL.ClearColor(Color.Orange);
+            GL.ClearColor(Color.Purple);
             GL.Clear(ClearBufferMask.ColorBufferBit | ClearBufferMask.DepthBufferBit);
+			Matrix4 baseMatrix = Matrix4.CreateOrthographicOffCenter(0, 800, 600, 0, -1, 1);
 		
             fbo.Enable(); 
             {
-//				GL.PushAttrib(AttribMask.ViewportBit);
-//				GL.Viewport(0,0,800,600);
-//				
-//				GL.ClearColor(1,1,1,0);
-//				GL.Clear(ClearBufferMask.ColorBufferBit);
 				
-				Matrix4 fboMatrix = Matrix4.CreateOrthographicOffCenter(0, 800, 600, 0, -1, 1);
+				Matrix4 fboMatrix = Matrix4.CreateOrthographicOffCenter(0, 800, 0, 600, -1, 1);
 				GL.MatrixMode(MatrixMode.Projection);
 				GL.LoadMatrix(ref fboMatrix);
 				
-				GL.Color4(Color.Red);
-				GL.Begin(BeginMode.Triangles);
-				GL.Vertex2(20,20);
-				GL.Vertex2(20,300);
-				GL.Vertex2(300,300);
-				GL.End();
-				
-				//foreach (ConvexHull h in hulls)
-                //        h.Render();
-				/*
-                GL.ClearDepth(1.1);
                 GL.Enable(EnableCap.DepthTest);
-            
+				GL.DepthMask(true);
+				foreach(ConvexHull h in hulls)
+                    	h.Render();
+				//GL.ColorMask(false, false, false, false);
+				
                 GL.DepthMask(false);
                 GL.Disable(EnableCap.DepthTest);
 
                 foreach (Light l in lights)
                 {
                     GL.ColorMask(false, false, false, true);
+					GL.ClearColor(1,1,1,0);
                     GL.Clear(ClearBufferMask.ColorBufferBit);
+					
                     GL.Disable(EnableCap.Blend);
-                    GL.Enable(EnableCap.DepthTest);
+                    //GL.Enable(EnableCap.DepthTest);
                     GL.ColorMask(false, false, false, true);
-                    //l.Render(1.0f);
+                    l.RenderAlpha(1.0f);
 
-                    GL.Enable(EnableCap.Blend);
                     GL.Enable(EnableCap.Blend);
                     GL.BlendFunc(BlendingFactorSrc.DstAlpha, BlendingFactorDest.One);
                     GL.ColorMask(true, true, true, false);
-
-                    foreach (ConvexHull h in hulls)
-                        h.Render();
-                       
-                }*/
-                //GL.PopAttrib();
+					
+					//GL.Disable(EnableCap.DepthTest);
+                }
             }
+			
             fbo.Disable();
+			GL.LoadMatrix(ref baseMatrix);
 			
 			fbo.RenderImmediate();
-			
             
             SwapBuffers();
         }
